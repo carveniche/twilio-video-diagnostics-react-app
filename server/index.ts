@@ -8,6 +8,7 @@ const PORT = process.env.PORT ?? 8081;
 
 const app = express();
 app.use(express.json());
+//testing
 
 // This server reuses the serverless endpoints from /serverless/functions/app, which is used when the "npm run serverless:deploy" command is run.
 const tokenFunction: ServerlessFunction = require('../serverless/functions/app/token').handler;
